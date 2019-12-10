@@ -1,0 +1,30 @@
+{
+  "name": "algocasts",
+  "version": "1.0.0",
+  "description": "Companion repo to a course on Udemy.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenGrider/AlgoCasts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephenGrider/AlgoCasts/issues"
+  },
+  "homepage": "https://github.com/StephenGrider/AlgoCasts#readme",
+  "dependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^1.19.1"
+  }
+}

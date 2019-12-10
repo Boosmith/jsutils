@@ -1,0 +1,40 @@
+{
+  "name": "jsutils",
+  "version": "1.0.0",
+  "description": "General JS utilities",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "nyc cover _mocha './**/*.unit.test.js",
+    "test": "npm run test:unit",
+    "test:unit": "mocha -- ./**/*.unit.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boosmith/jsutils.git"
+  },
+  "keywords": [
+    "JS",
+    "utilities"
+  ],
+  "author": "Andrew Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boosmith/jsutils/issues"
+  },
+  "homepage": "https://github.com/Boosmith/jsutils#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "dirty-chai": "^2.0.1",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "prettier": "^1.19.1"
+  }
+}
