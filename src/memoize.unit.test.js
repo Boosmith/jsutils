@@ -10,7 +10,7 @@ const { expect } = chai;
  * @param {Number} n
  * @returns Number
  */
-function fib(n) {
+function slowFib(n) {
   if (n < 2) {
     return n;
   }
@@ -18,32 +18,36 @@ function fib(n) {
   return fib(n - 1) + fib(n - 2);
 }
 
-const memoizedFib = memoize(fib);
+const fib = memoize(slowFib);
 
 describe('memoize()', function() {
   describe('test using Fibonacci', function() {
     it('should define fib function', () => {
-      expect(typeof fib).equal('function');
+      expect(typeof slowFib).equal('function');
     });
 
     it('should calculate correct fib value for 1', () => {
-      expect(memoizedFib(1)).equal(1);
+      expect(fib(1)).equal(1);
     });
 
     it('should calculate correct fib value for 2', () => {
-      expect(memoizedFib(2)).equal(1);
+      expect(fib(2)).equal(1);
     });
 
     it('should calculate correct fib value for 3', () => {
-      expect(memoizedFib(3)).equal(2);
+      expect(fib(3)).equal(2);
     });
 
     it('should calculate correct fib value for 4', () => {
-      expect(memoizedFib(4)).equal(3);
+      expect(fib(4)).equal(3);
     });
 
     it('should calculate correct fib value for 15', () => {
-      expect(memoizedFib(39)).equal(63245986);
+      expect(fib(15)).equal(610);
+    });
+
+    it('should calculate correct fib value for 40', () => {
+      expect(fib(40)).equal(102334155);
     });
   });
 });
