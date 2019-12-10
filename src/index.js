@@ -1,3 +1,4 @@
 const memoize = require('./memoize');
+const mergeSort = require('./mergeSort');
 
-module.exports = { memoize };
+module.exports = { memoize, mergeSort };
